@@ -5,21 +5,21 @@
 class Parel < Formula
   desc "Parel CLI - single binary for the Parel AI gateway"
   homepage "https://parel.cloud"
-  version "0.1.4"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.4/parel_0.1.4_darwin_amd64.tar.gz"
-      sha256 "4308731474e9e673ecbb3baf8bdeac9e46b317df9a67af8649656f5419bc435c"
+      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.5/parel_0.1.5_darwin_amd64.tar.gz"
+      sha256 "ff501ae7ce02660c5feb8784e8c01d6f6a8b0a45b99b2a6deb9ab813f585394a"
 
       define_method(:install) do
         bin.install "parel"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.4/parel_0.1.4_darwin_arm64.tar.gz"
-      sha256 "bb6094b30a097f24c39c995e2e283dad929371f056a01a20f23825be1ee7fa28"
+      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.5/parel_0.1.5_darwin_arm64.tar.gz"
+      sha256 "831c9144ab08630a78964fcf329fb1f99b5860380de7ed9bd5cfae592f8924cc"
 
       define_method(:install) do
         bin.install "parel"
@@ -29,15 +29,15 @@ class Parel < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.4/parel_0.1.4_linux_amd64.tar.gz"
-      sha256 "7af578c161945f15f9854b11d4d1d3b99e6ad2e19a203b187870dc305c723e55"
+      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.5/parel_0.1.5_linux_amd64.tar.gz"
+      sha256 "589595c5764d224376dfd5822ea52438759a8b88daa65f8e9ab4396061e4bbc1"
       define_method(:install) do
         bin.install "parel"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.4/parel_0.1.4_linux_arm64.tar.gz"
-      sha256 "b2c57c106bd39c2e74ae86adfea172db191ecfefc8c18cb5b85127a6055cc978"
+      url "https://github.com/parel-cloud/parel-cli/releases/download/v0.1.5/parel_0.1.5_linux_arm64.tar.gz"
+      sha256 "2ce755379fc0a8b98156ba28bc665ccc5b985089ec6fbbb4f2f7566e6bde45ef"
       define_method(:install) do
         bin.install "parel"
       end
